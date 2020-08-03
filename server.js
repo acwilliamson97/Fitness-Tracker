@@ -13,8 +13,10 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const mongoUri = process.env.MONGODB_URI || "mongodb://localhost/workout";
+const mongoUri = process.env.MONGODB_URI || "mongodb://<user1>:<password1>@ds027489.mlab.com:27489/heroku_t1lkscqq";
+
 mongoose.connect(mongoUri, {
+  useMongoClient: true,
   useNewUrlParser: true,
   useFindAndModify: false,
   useUnifiedTopology: true
