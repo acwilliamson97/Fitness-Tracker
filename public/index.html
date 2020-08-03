@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <title>Fitness Workouts</title>
+</head>
+<nav>
+    <a href="/" style="color:#fff">Fitness Tracker</a>
+    <a href="/exercise"><button class="btn btn-outline-success my-2 my-sm-0 float-right" style="margin-top:10px">Add
+            Workouts</button>
+    </a>
+</nav>
+
+<body>
+    <div class="container mt">
+        <h1 class="text-center">Workout Dashboard</h1>
+        <div class="row mt">
+            <div class="workout-stats offset-md-5 col-md-3 "></div>
+            <!-- <div class="col-md-6">
+				<canvas id="canvas"></canvas>
+			</div>
+			<div class="col-md-6">
+				<canvas id="canvas2"></canvas>
+			</div> -->
+        </div>
+        <div class="row mt">
+            <div class="col-md-6">
+                <canvas id="canvas3"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="canvas4"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Zero Workouts!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">There is no workouts please add them.</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        style="color: #000">Close</button>
+                    <a href="/exercise"><button type="button" class="btn btn-primary" style="color: #000">Create A
+                            Workout</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="/api.js"></script>
+    <script src="/stats.js"></script>
+    <script src="/workout.js"></script>
+</body>
+
+</html>
